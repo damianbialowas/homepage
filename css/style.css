@@ -16,6 +16,7 @@ html {
 .header {
     color: white;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     background: rgb(36, 2, 0);
     background: rgb(190, 208, 203);
@@ -31,27 +32,33 @@ html {
 }
 
 .header__welcome {
+    flex-basis: 100%;
     margin: 10px;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 .header__title {
+    flex-basis: 100%;
     margin: 5px;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 .header__description {
+    flex-basis: 100%;
     margin: 0;
     font-family: 'Saira Condensed', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: normal;
+    text-align: center;
 }
 
 .header__button {
@@ -68,10 +75,37 @@ html {
 
 .header__picture {
     width: 100%;
-    /* padding: 0 0 0 20px; */
-    /* overflow: hidden; */
 }
 
 section {
     height: 100vh;
+}
+
+@media (orientation: landscape) {
+    .header {
+        flex-direction: row-reverse;
+    }
+    .header__container {
+        justify-content: flex-start;
+        width: 40%;
+        margin: 0;
+    }
+    .header__welcome {
+        margin-left: 0;
+        text-align: left;
+    }
+    .header__title {
+        margin: 0;
+        text-align: left;
+    }
+    .header__description {
+        text-align: left;
+    }
+    .header__button {
+        flex-basis: 65%;
+    }
+    .header__picture {
+        flex-basis: 60%;
+        width: 50%;
+    }
 }
