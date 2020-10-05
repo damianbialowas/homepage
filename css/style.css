@@ -1,3 +1,8 @@
+/* font-family: 'Saira', sans-serif; */
+
+
+/* font-family: 'Saira Condensed', sans-serif; */
+
 html {
     box-sizing: border-box;
 }
@@ -6,4 +11,67 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+}
+
+.header {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(36, 2, 0);
+    background: rgb(190, 208, 203);
+    background: linear-gradient(0deg, rgba(190, 208, 203, 1) 8%, rgba(224, 187, 114, 0.8519782913165266) 60%);
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 10%;
+}
+
+.header__welcome {
+    margin: 10px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__title {
+    margin: 5px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.header__description {
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.header__button {
+    margin: 20px 0;
+    padding: 8px;
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.header__picture {
+    width: 100%;
+    /* padding: 0 0 0 20px; */
+    /* overflow: hidden; */
+}
+
+section {
+    height: 100vh;
 }
