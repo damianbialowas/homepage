@@ -62,8 +62,8 @@ html {
 }
 
 .header__button {
+    flex-basis: 80%;
     margin: 20px 0;
-    padding: 8px;
     font-family: 'Saira', sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -71,6 +71,7 @@ html {
     background-color: transparent;
     color: white;
     border: 2px solid white;
+    line-height: 30px;
 }
 
 .header__picture {
@@ -81,13 +82,62 @@ section {
     height: 100vh;
 }
 
+@media (orientation: portrait) and (min-width: 360px) {
+    .header__welcome {
+        font-size: 48px;
+    }
+    .header__title,
+    .header__description {
+        font-size: 24px;
+    }
+    .header__button {
+        flex-basis: 60%;
+        font-size: 14px;
+        line-height: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+    .header__welcome {
+        font-size: 54px;
+    }
+    .header__title,
+    .header__description {
+        font-size: 32px;
+    }
+    .header__button {
+        flex-basis: 60%;
+        font-size: 20px;
+        line-height: 45px;
+        margin-top: 50px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px) {
+    .header__welcome {
+        margin-bottom: 40px;
+        font-size: 84px;
+    }
+    .header__title,
+    .header__description {
+        font-size: 42px;
+    }
+    .header__button {
+        flex-basis: 60%;
+        font-size: 24px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+}
+
 @media (orientation: landscape) {
     .header {
         flex-direction: row-reverse;
     }
     .header__container {
         justify-content: flex-start;
-        width: 40%;
+        width: 50%;
         margin: 0;
     }
     .header__welcome {
@@ -102,10 +152,41 @@ section {
         text-align: left;
     }
     .header__button {
-        flex-basis: 65%;
+        flex-basis: 60%;
     }
     .header__picture {
-        flex-basis: 60%;
         width: 50%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .header__welcome {
+        font-size: 40px;
+    }
+    .header__title,
+    .header__description {
+        font-size: 20px;
+    }
+    .header__button {
+        flex-basis: 70%;
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .header__welcome {
+        margin-bottom: 50px;
+        font-size: 84px;
+    }
+    .header__title,
+    .header__description {
+        font-size: 44px;
+    }
+    .header__button {
+        flex-basis: 80%;
+        font-size: 28px;
+        line-height: 70px;
+        margin-top: 40px;
     }
 }
