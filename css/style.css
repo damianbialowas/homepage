@@ -177,16 +177,52 @@ section {
 @media (orientation: landscape) and (min-width: 1024px) {
     .header__welcome {
         margin-bottom: 50px;
-        font-size: 84px;
+        font-size: 74px;
     }
     .header__title,
     .header__description {
-        font-size: 44px;
+        font-size: 34px;
     }
     .header__button {
         flex-basis: 80%;
-        font-size: 28px;
-        line-height: 70px;
+        font-size: 24px;
+        line-height: 50px;
         margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1240px) {
+    .header__button {
+        flex-basis: 70%;
+        font-size: 24px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .header__welcome {
+        font-size: 120px;
+    }
+    .header__title,
+    .header__description {
+        font-size: 60px;
+    }
+    .header__button {
+        flex-basis: 80%;
+        font-size: 38px;
+        line-height: 90px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__button {
+        cursor: pointer;
+    }
+    .header__button:hover {
+        background-color: #fff;
+        color: #111;
+        transition: .3s;
     }
 }
