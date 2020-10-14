@@ -1,0 +1,247 @@
+/* font-family: 'Saira', sans-serif; */
+
+
+/* font-family: 'Saira Condensed', sans-serif; */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgb(36, 2, 0);
+    background: rgb(190, 208, 203);
+    background: linear-gradient(0deg, rgba(190, 208, 203, 1) 8%, rgba(224, 187, 114, 0.8519782913165266) 60%);
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 10%;
+}
+
+.header__welcome {
+    flex-basis: 100%;
+    margin: 10px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header__title {
+    flex-basis: 100%;
+    margin: 5px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header__description {
+    flex-basis: 100%;
+    margin: 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+}
+
+.header__button {
+    flex-basis: 80%;
+    margin: 20px 0;
+    font-family: 'Saira', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    line-height: 30px;
+}
+
+.header__picture {
+    width: 100%;
+}
+
+section {
+    height: 100vh;
+}
+
+@media (orientation: portrait) and (min-width: 360px) {
+    .header__welcome {
+        font-size: 48px;
+    }
+
+    .header__title,
+    .header__description {
+        font-size: 24px;
+    }
+
+    .header__button {
+        flex-basis: 60%;
+        font-size: 14px;
+        line-height: 40px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 760px) {
+    .header__welcome {
+        font-size: 54px;
+    }
+
+    .header__title,
+    .header__description {
+        font-size: 32px;
+    }
+
+    .header__button {
+        flex-basis: 60%;
+        font-size: 20px;
+        line-height: 45px;
+        margin-top: 50px;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 1024px) {
+    .header__welcome {
+        margin-bottom: 40px;
+        font-size: 84px;
+    }
+
+    .header__title,
+    .header__description {
+        font-size: 42px;
+    }
+
+    .header__button {
+        flex-basis: 60%;
+        font-size: 24px;
+        line-height: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media (orientation: landscape) {
+    .header {
+        flex-direction: row-reverse;
+    }
+
+    .header__container {
+        justify-content: flex-start;
+        width: 50%;
+        margin: 0;
+    }
+
+    .header__welcome {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .header__title {
+        margin: 0;
+        text-align: left;
+    }
+
+    .header__description {
+        text-align: left;
+    }
+
+    .header__button {
+        flex-basis: 60%;
+    }
+
+    .header__picture {
+        width: 50%;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    .header__welcome {
+        font-size: 40px;
+    }
+
+    .header__title,
+    .header__description {
+        font-size: 20px;
+    }
+
+    .header__button {
+        flex-basis: 70%;
+        font-size: 14px;
+        line-height: 32px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    .header__welcome {
+        margin-bottom: 50px;
+        font-size: 74px;
+    }
+
+    .header__title,
+    .header__description {
+        font-size: 34px;
+    }
+
+    .header__button {
+        flex-basis: 80%;
+        font-size: 24px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1240px) {
+    .header__button {
+        flex-basis: 70%;
+        font-size: 24px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1600px) {
+    .header__welcome {
+        font-size: 120px;
+    }
+
+    .header__title,
+    .header__description {
+        font-size: 60px;
+    }
+
+    .header__button {
+        flex-basis: 80%;
+        font-size: 38px;
+        line-height: 90px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header__button {
+        cursor: pointer;
+    }
+
+    .header__button:hover {
+        background-color: #fff;
+        color: #111;
+        transition: .3s;
+    }
+}
