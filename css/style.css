@@ -10,6 +10,8 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -234,7 +236,7 @@ section {
   margin: auto;
   max-width: 1600px;
   text-align: center;
-  height: 30vh;
+  height: 100%;
 }
 
 .features__header {
@@ -319,4 +321,53 @@ section {
   .features__header {
     font-size: 60px;
   }
+}
+
+.portfolio {
+  height: 100%;
+  max-width: 1600px;
+  background-color: black;
+}
+
+.portfolio__header {
+  padding: 25px 7px;
+  font-family: "Saira Condensed", sans-serif;
+  color: white;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 130%;
+}
+
+.project:nth-of-type(even) {
+  background-color: rgb(182, 161, 201);
+}
+
+.project:nth-of-type(odd) {
+  background-color: rgb(197, 68, 68);
+}
+
+.project__image {
+  width: 100%;
+}
+
+.project__description {
+  font-family: "Saira", sans-serif;
+  color: white;
+  height: 100%;
+  margin: 0;
+}
+
+.description__title {
+  margin-right: 20px;
+  padding: 15px 0 10px;
+  font-size: 18px;
+  font-weight: 300;
+  text-indent: 20px;
+  border-bottom: 1px solid white;
+}
+
+.description__content {
+  padding: 20px 20px;
+  font-size: 12px;
 }
