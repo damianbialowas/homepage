@@ -19,9 +19,6 @@ html {
     color: white;
     display: grid;
     grid-template-columns: 1fr;
-    /* display: flex; */
-    justify-content: center;
-    flex-wrap: wrap;
     background: rgb(36, 2, 0);
     background: rgb(190, 208, 203);
     background: linear-gradient( 0deg, rgba(190, 208, 203, 1) 8%, rgba(224, 187, 114, 0.8519782913165266) 60%);
@@ -138,11 +135,10 @@ section {
 @media (orientation: landscape) {
     .header {
         grid-template-columns: 1fr 1fr;
-        flex-direction: row-reverse;
     }
     .header__container {
+        grid-column-start: 2;
         justify-content: flex-start;
-        width: 50%;
         margin: 0;
     }
     .header__welcome {
@@ -158,9 +154,10 @@ section {
     }
     .header__button {
         flex-basis: 70%;
+        width: 00px;
     }
     .header__picture {
-        /* width: 50%; */
+        grid-row-start: 1;
     }
 }
 
