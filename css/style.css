@@ -11,6 +11,8 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
@@ -20,7 +22,7 @@ html {
     flex-wrap: wrap;
     background: rgb(36, 2, 0);
     background: rgb(190, 208, 203);
-    background: linear-gradient(0deg, rgba(190, 208, 203, 1) 8%, rgba(224, 187, 114, 0.8519782913165266) 60%);
+    background: linear-gradient( 0deg, rgba(190, 208, 203, 1) 8%, rgba(224, 187, 114, 0.8519782913165266) 60%);
 }
 
 .header__container {
@@ -34,7 +36,7 @@ html {
 .header__welcome {
     flex-basis: 100%;
     margin: 10px;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: "Saira Condensed", sans-serif;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
@@ -44,7 +46,7 @@ html {
 .header__title {
     flex-basis: 100%;
     margin: 5px;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: "Saira Condensed", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
@@ -54,7 +56,7 @@ html {
 .header__description {
     flex-basis: 100%;
     margin: 0;
-    font-family: 'Saira Condensed', sans-serif;
+    font-family: "Saira Condensed", sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     font-weight: normal;
@@ -64,7 +66,7 @@ html {
 .header__button {
     flex-basis: 80%;
     margin: 20px 0;
-    font-family: 'Saira', sans-serif;
+    font-family: "Saira", sans-serif;
     font-size: 12px;
     font-weight: 300;
     text-transform: uppercase;
@@ -91,7 +93,7 @@ section {
         font-size: 24px;
     }
     .header__button {
-        flex-basis: 60%;
+        flex-basis: 80%;
         font-size: 14px;
         line-height: 40px;
         margin-top: 40px;
@@ -152,7 +154,7 @@ section {
         text-align: left;
     }
     .header__button {
-        flex-basis: 60%;
+        flex-basis: 70%;
     }
     .header__picture {
         width: 50%;
@@ -223,6 +225,211 @@ section {
     .header__button:hover {
         background-color: #fff;
         color: #111;
-        transition: .3s;
+        transition: 0.3s;
+    }
+}
+
+.features {
+    margin: auto;
+    max-width: 1600px;
+    text-align: center;
+    height: 100%;
+}
+
+.features__header {
+    margin: 40px 15px 40px;
+    padding: 0 5px;
+    font-family: "Saira Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.feature {
+    margin: 10px 0;
+    border: 2px solid black;
+    padding: 30px 30px;
+}
+
+.feature__image {
+    max-width: 200px;
+    padding: auto;
+}
+
+.feature__heading {
+    font-family: "Saira Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.feature__description {
+    font-family: "Saira", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 140%;
+}
+
+@media (min-width: 360px) {
+    .feature__description {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .features__header {
+        margin: 60px 15px 60px;
+        padding: 0 5px;
+        font-size: 33px;
+    }
+    .feature__heading {
+        font-size: 26px;
+    }
+    .feature__description {
+        /* padding: 40px; */
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .features__header {
+        margin-bottom: 40px;
+        flex-basis: 100%;
+        font-size: 50px;
+    }
+    .feature {
+        display: flex;
+        flex-basis: 32%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1600px) {
+    .features__header {
+        font-size: 60px;
+    }
+}
+
+.portfolio {
+    height: 100%;
+    max-width: 1600px;
+    background-color: black;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+
+.portfolio__header {
+    padding: 25px 7px 5px;
+    font-family: "Saira Condensed", sans-serif;
+    color: white;
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 130%;
+}
+
+.project {
+    margin-top: 20px;
+}
+
+.project:nth-of-type(even) {
+    background-color: rgb(182, 161, 201);
+}
+
+.project:nth-of-type(odd) {
+    background-color: rgb(197, 68, 68);
+}
+
+.project__image {
+    width: 100%;
+}
+
+.project__description {
+    font-family: "Saira", sans-serif;
+    color: white;
+    height: 100%;
+}
+
+.description__title {
+    margin-right: 20px;
+    padding: 15px 0 15px 20px;
+    font-size: 18px;
+    font-weight: 300;
+    border-bottom: 1px solid white;
+}
+
+.description__content {
+    padding: 20px 20px;
+    font-size: 12px;
+    font-weight: 300;
+    height: 220px;
+}
+
+@media (orientation: landscape) and (min-width: 768px) {
+    .project {
+        display: flex;
+        justify-content: center;
+        margin: 30px 30px 0;
+    }
+    .project:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    .project__image {
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    .portfolio {
+        margin-top: 20px;
+    }
+    .project {
+        display: flex;
+        margin: 30px 30px 0;
+    }
+    .project:nth-of-type(even) {
+        flex-direction: row-reverse;
+    }
+    .project__image {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .portfolio__header {
+        font-size: 45px;
+    }
+    .description__title {
+        font-size: 26px;
+    }
+    .description__content {
+        font-size: 16px;
+        line-height: 160%;
+    }
+}
+
+@media(min-width: 1366px) {
+    .portfolio__header {
+        font-size: 50px;
+    }
+    .description__title {
+        padding-top: 35px;
+    }
+    .description__content {
+        font-size: 18px;
+        line-height: 180%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .description__title {
+        font-size: 30px;
+        padding-top: 40px;
     }
 }

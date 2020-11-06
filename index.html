@@ -1,32 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Damian Białowąs - Web Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Saira:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="scss/style.scss" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__container">
-            <p class="header__welcome">witaj!</p>
-            <h1 class="header__title">jestem Damian Białowąs,</h1>
-            <h2 class="header__description">web developer - freelancer</h2>
-            <button class="header__button">zobacz moje portfolio</button>
-        </div>
-        <img class="header__picture" src="images/Damian.png" alt="zdjęcia Damiana Białowąs">
+      <div class="header__container">
+        <p class="header__welcome">witaj!</p>
+        <h1 class="header__title">jestem Damian Białowąs,</h1>
+        <h2 class="header__description">web developer - freelancer</h2>
+        <button class="header__button">zobacz moje portfolio</button>
+      </div>
+      <img
+        class="header__picture"
+        src="images/Damian.png"
+        alt="zdjęcia Damiana Białowąs"
+      />
     </header>
-    <section></section>
-    <section></section>
+    <section class="features">
+      <h2 class="features__header">Tworzę bardzo dobre strony internetowe</h2>
+      <article class="feature">
+        <img
+          class="feature__image"
+          src="images/services1.png"
+          alt="loga html css js"
+        />
+        <h3 class="feature__heading">
+          Nowoczesne i zgodne z aktualnymi standardami
+        </h3>
+        <p class="feature__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem totam voluptatibus suscipit molestiae facere quas rem
+          cupiditate porro a, non minus tempora magnam earum ea commodi veniam
+          accusamus vero nulla!
+        </p>
+      </article>
+      <article class="feature">
+        <img
+          class="feature__image"
+          src="images/services2.png"
+          alt="logo przeglądarki google"
+        />
+        <h3 class="feature__heading">
+          Zoptymalizowane pod kątem wyszukiwarek internetowych
+        </h3>
+        <p class="feature__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem totam voluptatibus suscipit molestiae facere quas rem
+          cupiditate porro a, non minus tempora magnam earum ea commodi veniam
+          accusamus vero nulla!
+        </p>
+      </article>
+      <article class="feature">
+        <img
+          class="feature__image"
+          src="images/services3.png"
+          alt="obrazek urządzeń mobilnych"
+        />
+        <h3 class="feature__heading">
+          Świetnie wyglądające na urządzeniach mobilnych
+        </h3>
+        <p class="feature__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem totam voluptatibus suscipit molestiae facere quas rem
+          cupiditate porro a, non minus tempora magnam earum ea commodi veniam
+          accusamus vero nulla!
+        </p>
+      </article>
+    </section>
+    <section class="portfolio">
+      <h2 class="portfolio__header">Projekty, z których jestem dumny</h2>
+      <article class="project">
+        <img
+          class="project__image"
+          src="images/portfolio1.jpg"
+          alt="zdjęcie peierwszego projektu"
+        />
+        <div class="project__description">
+          <h3 class="description__title">Nazwa projektu</h3>
+          <p class="description__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            odit deleniti impedit officiis iusto similique tempore eveniet in
+            sapiente facere sequi saepe dolor, nemo temporibus ullam, atque
+            reprehenderit laborum alias!
+          </p>
+        </div>
+      </article>
+      <article class="project">
+        <img
+          class="project__image"
+          src="images/portfolio2.jpg"
+          alt="zdjęcie drugiego projektu"
+        />
+        <div class="project__description">
+          <h3 class="description__title">Nazwa projektu</h3>
+          <p class="description__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            odit deleniti impedit officiis iusto similique tempore eveniet in
+            sapiente facere sequi saepe dolor, nemo temporibus ullam, atque
+            reprehenderit laborum alias!
+          </p>
+        </div>
+      </article>
+      <article class="project">
+        <img
+          class="project__image"
+          src="images/portfolio3.jpg"
+          alt="zdjęcie trzeciego projektu"
+        />
+        <div class="project__description">
+          <h3 class="description__title">Nazwa projektu</h3>
+          <p class="description__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            odit deleniti impedit officiis iusto similique tempore eveniet in
+            sapiente facere sequi saepe dolor, nemo temporibus ullam, atque
+            reprehenderit laborum alias!
+          </p>
+        </div>
+      </article>
+      <article class="project">
+        <img
+          class="project__image"
+          src="images/portfolio4.jpg"
+          alt="zdjęcie czwartego projektu"
+        />
+        <div class="project__description">
+          <h3 class="description__title">Nazwa projektu</h3>
+          <p class="description__content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores
+            odit deleniti impedit officiis iusto similique tempore eveniet in
+            sapiente facere sequi saepe dolor, nemo temporibus ullam, atque
+            reprehenderit laborum alias!
+          </p>
+        </div>
+      </article>
+    </section>
     <section></section>
     <section></section>
     <section></section>
     <footer></footer>
-
-</body>
-
+  </body>
 </html>
