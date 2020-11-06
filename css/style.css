@@ -17,7 +17,9 @@ html {
 
 .header {
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* display: flex; */
     justify-content: center;
     flex-wrap: wrap;
     background: rgb(36, 2, 0);
@@ -135,6 +137,7 @@ section {
 
 @media (orientation: landscape) {
     .header {
+        grid-template-columns: 1fr 1fr;
         flex-direction: row-reverse;
     }
     .header__container {
@@ -157,7 +160,7 @@ section {
         flex-basis: 70%;
     }
     .header__picture {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
